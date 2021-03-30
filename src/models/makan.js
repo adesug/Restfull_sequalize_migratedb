@@ -14,7 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   makan.init({
-    nama: DataTypes.STRING,
+    // nama: DataTypes.STRING,
+    // harga: DataTypes.INTEGER
+    nama: DataTypes.TEXT,
     harga: DataTypes.INTEGER
   }, {
     sequelize,
