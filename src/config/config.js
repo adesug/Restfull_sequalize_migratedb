@@ -31,10 +31,7 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    username: DB_USERNAME_PRODUCTION,
-    password: DB_PASSWORD_PRODUCTION,
-    database: DB_DATABASE_PRODUCTION,
-    host: DB_HOST_PRODUCTION,
+    use_env_variable: 'DATABASE_URL',
     dialect: "postgress",
     protocol: "postgress",
     dialectOptions: {
@@ -44,6 +41,5 @@ module.exports = {
       }
     }
 
-    
       }
 }
